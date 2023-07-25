@@ -31,7 +31,7 @@ body.dark{
     align-items: center;
     gap: 36px;
 }
-.container .clock{
+.clock{
     display: flex;
     height: 400px;
     width: 400px;
@@ -105,4 +105,22 @@ footer{
     color: var(--black-color);
     margin-top: -20px;
     font-weight: 300;
+}
+@media screen and (max-width: 480px) {
+    .clock{ height: 350px; width: 350px; }
+    .indicator .hand.hour { 
+        height: 90px; 
+    }
+    .indicator .hand.min { 
+        height: 110px; 
+    }
+    .indicator .hand{
+        height: 115px; 
+    }
+    
+    .clock label span{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
 }
